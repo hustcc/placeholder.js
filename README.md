@@ -39,20 +39,7 @@ see file `index.html`, or below:
 ## Why another Holder?
 
  - image placeholder generate by server side is not my need.
- - [imsky/holder](https://github.com/imsky/holder) can generate on client browser side, `BUT`, the sytle is `holder.js/300x200`, so hard to use on website. FOR EXAMPLE:
-
-
-	<!-- start -->
-	<image src="the-origin-image.png" onerror="img_not_exist(this)" /> 
-	
-	<script type="text/javascript">
-		function img_not_exist(obj) {
-			obj.src="xxxooo"; //TOOD: use image placehoder
-			obj.onerror = null;
-		}
-	</script>
-
-
+ - [imsky/holder](https://github.com/imsky/holder) can generate on client browser side, `BUT`, the sytle is `holder.js/300x200`, so hard to use on website when need dynamic image.
  - other image placeholder javascript file size is too large, such as `imsky/holder is 30.8 KB`, not suitable for website.
 
 
