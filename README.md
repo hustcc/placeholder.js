@@ -1,6 +1,6 @@
 # image-placeholder.js
 
-A javascript lib to generate `placeholder image` on client browser side.
+A javascript lib to generate `placeholder image` on client browser side. [中文Readme帮助文档](README-zh.md)
 
 
 ## Feature
@@ -8,7 +8,7 @@ A javascript lib to generate `placeholder image` on client browser side.
  - do not depend on jQuery or other javascript framework.
  - very lite, only `0.79kb`. can be smaller after gzip.
  - so many option config, all has default value.
- - vaer easy to use.
+ - vary easy to use.
 
 
 ## Usage
@@ -52,3 +52,7 @@ see file `index.html`, or below:
 
 ![screenshot.png](screenshot.png)
 
+
+## Other
+
+welcome pr and issue, the code is simple.
