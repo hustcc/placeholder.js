@@ -3,6 +3,15 @@
 A javascript lib to generate `placeholder image` on client browser side. [EN-Readme](README.md)
 
 
+## 预览
+
+[官方网站示例](http://github.atool.org/placeholder.js.html)
+
+![default_placeholder.png](default_placeholder.png)
+
+![screenshot.png](screenshot.png)
+
+
 ## 特点
 
 1. 不依赖什么 js 框架，比如 jq
@@ -47,14 +56,6 @@ see file `index.html`, or below:
 1. 更多的灵活配置
 2. font-size 自动计算，以防止文字太多的时候，超过图片大小
 
-
-## 预览
-
-[官方网站示例](http://github.atool.org/placeholder.js.html)
-
-![default_placeholder.png](default_placeholder.png)
-
-![screenshot.png](screenshot.png)
 
 ## 其他
 

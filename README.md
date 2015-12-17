@@ -3,6 +3,15 @@
 A javascript lib to generate `placeholder image` on client browser side. [中文Readme帮助文档](README-zh.md)
 
 
+## Demo & Preview
+
+[Website Demo](http://github.atool.org/placeholder.js.html)
+
+![default_placeholder.png](default_placeholder.png)
+
+![screenshot.png](screenshot.png)
+
+
 ## Feature
 
  - do not depend on jQuery or other javascript framework.
@@ -47,14 +56,6 @@ see file `index.html`, or below:
 
 1. set default `font_size` is 'auto', can auto calculate the size of text font to avoid the text overflow.
 2. more useful option paramters.
-
-## Demo & Preview
-
-[Website Demo](http://github.atool.org/placeholder.js.html)
-
-![default_placeholder.png](default_placeholder.png)
-
-![screenshot.png](screenshot.png)
 
 
 ## Other
