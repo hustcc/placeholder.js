@@ -50,6 +50,8 @@ see file `index.html`, or below:
 
 ## Demo & Preview
 
+[Website Demo](http://github.atool.org/placeholder.js.html)
+
 ![default_placeholder.png](default_placeholder.png)
 
 ![screenshot.png](screenshot.png)

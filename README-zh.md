@@ -50,6 +50,8 @@ see file `index.html`, or below:
 
 ## 预览
 
+[官方网站示例](http://github.atool.org/placeholder.js.html)
+
 ![default_placeholder.png](default_placeholder.png)
 
 ![screenshot.png](screenshot.png)
