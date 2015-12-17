@@ -50,6 +50,8 @@ see file `index.html`, or below:
 
 ## Demo & Preview
 
+![default_placeholder.png](default_placeholder.png)
+
 ![screenshot.png](screenshot.png)
 
 
