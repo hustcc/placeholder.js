@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>image-placeholder.js</title>
+  </head>
+<body>
+<script type="text/javascript" src="placeholder.js"></script>
+<img id="img_holder" src="">
+<script type="text/javascript">
+    var opts = {
+      size: '512x256',
+      font: {
+        style:'oblique',
+        size:'40'
+      },
+      text: 'Hello World, 你好'
+    }
+    document.getElementById('img_holder').setAttribute('src', window.placeholder.getData(opts));
+</script>
+</body>
+</html>
