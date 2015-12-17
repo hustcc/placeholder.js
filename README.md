@@ -43,7 +43,7 @@ see file `index.html`, or below:
 
 
 	<!-- start -->
-	<img src="the-origin-image.png" onerror="img_not_exist(this)" /> 
+	<image src="the-origin-image.png" onerror="img_not_exist(this)" /> 
 	
 	<script type="text/javascript">
 		function img_not_exist(obj) {
