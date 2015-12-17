@@ -42,6 +42,7 @@ see file `index.html`, or below:
  - [imsky/holder](https://github.com/imsky/holder) can generate on client browser side, `BUT`, the sytle is `holder.js/300x200`, so hard to use on website. FOR EXAMPLE:
 
 
+	<!-- start -->
 	<img src="the-origin-image.png" onerror="img_not_exist(this)" /> 
 	
 	<script type="text/javascript">
