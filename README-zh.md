@@ -15,7 +15,7 @@ A javascript lib to generate `placeholder image` on client browser side. [EN-Rea
 ## 特点
 
 1. 不依赖任何 js 框架，比如 jq
-2. 小于 1k ，具体是`0.79k`
+2. 小于 1k ，具体是`0.98k`
 3. 配置项多，都有默认值
 4. 使用简单
 

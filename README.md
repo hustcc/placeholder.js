@@ -15,7 +15,7 @@ A javascript lib to generate `placeholder image` on client browser side. [中文
 ## Feature
 
  - do not depend on jQuery or other javascript framework.
- - very lite, only `0.79kb`. can be smaller after gzip.
+ - very lite, only `0.98kb`. can be smaller after gzip.
  - so many option config, all has default value.
  - vary easy to use.
 
@@ -33,7 +33,7 @@ see file `index.html`, or below:
       	font: {
         	style:'oblique', //font-style, can be: normal / italic / oblique, default: 'oblique'
 			weight: 'bold', //font-weight, can be: normal / bold / bolder / lighter / Number, default: 'bold'
-        	size:'40', //font-size: Number, default: 30
+        	size:'40', //font-size: Number, default: automation font size to avoid text overflow
 			family: 'consolas' //font-family, default: 'consolas'
       },
       
@@ -54,7 +54,6 @@ see file `index.html`, or below:
 
 ## TODO
 
-1. set default `font_size` is 'auto', can auto calculate the size of text font to avoid the text overflow.
 2. more useful option paramters.
 
 
