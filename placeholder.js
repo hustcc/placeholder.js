@@ -19,8 +19,8 @@
 		var scale = 1.0, default_size = 40;
 		if (font.size === '') {
 			//auto calculate size
-			var width_limit = 0.6 * c.width, 
-				heigth_limit = 0.6 * c.height, 
+			var width_limit = 0.7 * c.width, 
+				heigth_limit = 0.7 * c.height, 
 				text_width = cc.measureText(text).width,
 				text_height = default_size;
 
