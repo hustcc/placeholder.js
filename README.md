@@ -7,9 +7,9 @@ A javascript lib to generate `placeholder image` on client browser side. [中文
 
 [Website Demo](http://github.atool.org/placeholder.js.html)
 
-![default_placeholder.png](default_placeholder.png)
+![screenshots/website.png](screenshots/website.png)
 
-![screenshot.png](screenshot.png)
+![screenshots/with_chinese.png](screenshots/with_chinese.png)
 
 
 ## Feature

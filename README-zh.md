@@ -7,14 +7,14 @@ A javascript lib to generate `placeholder image` on client browser side. [EN-Rea
 
 [官方网站示例](http://github.atool.org/placeholder.js.html)
 
-![default_placeholder.png](default_placeholder.png)
+![screenshots/website.png](screenshots/website.png)
 
-![screenshot.png](screenshot.png)
+![screenshots/with_chinese.png](screenshots/with_chinese.png)
 
 
 ## 特点
 
-1. 不依赖什么 js 框架，比如 jq
+1. 不依赖任何 js 框架，比如 jq
 2. 小于 1k ，具体是`0.79k`
 3. 配置项多，都有默认值
 4. 使用简单
