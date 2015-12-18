@@ -1,3 +1,10 @@
+/*!
+	placeholder.js - client side image placeholders
+	© 2015 Hustcc - http://www.aTool.org
+	Site:     http://github.atool.org/placeholder.js.html
+	Issues:   https://github.com/hustcc/placeholder.js/issues
+	License:  MIT
+*/
 (function() {
 	var c, cc; //公用一个实例，减少内存占用，减少资源消耗
 	function createCanvas(size, text, color, bgcolor, font) {
