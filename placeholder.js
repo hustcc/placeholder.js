@@ -34,7 +34,7 @@
 			scale = Math.min(width_limit / text_width, heigth_limit / text_height);
 		}
 		//文字居中
-		cc.translate(c.width / 2, c.height / 2)
+		cc.translate(c.width / 2, c.height / 2);
 		cc.scale(scale, scale);
         cc.textAlign = 'center';
         cc.textBaseline = 'middle';
@@ -67,7 +67,7 @@
 
 		size = size.split('x');
 		if (size.length !== 2) {
-			size = [128, 128]
+			size = [128, 128];
 		}
 		return createCanvas(size, text, color, bgcolor, font);
 	}
