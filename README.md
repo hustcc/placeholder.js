@@ -15,7 +15,7 @@ A javascript library to generate `placeholder image` on client browser side. [�
 ## Feature
 
  - Pure javascript, do not depends on jQuery or other javascript framework.
- - Very lite, only `0.98kb`. can be smaller after gzip.
+ - Very lite, only `0.98k`. can be smaller after gzip. After add img options, library is up to `1.52kb`.
  - So many option config, all has default value.
  - Very easy to use.
 
@@ -26,41 +26,51 @@ Include placeholder.js in your HTML:
 
 	<script src="placeholder.js"></script>
 
-Programmatic use API to process image with a specific src attribute, like this one:
+`1.` Programmatic use API to process image with a specific src attribute, like this one:
 
 	<img src="image_origin.png" onerror="this.src=placeholder.getData({text: 'Image 404'})">
+
+`2.` Holder will then process all images with a specific src attribute, like this one:
 	
+	<img class="placeholder" />
+
+or with options setting:
+
+    <img options="size=256x128&text=Hello!" class="placeholder" />
+
+**Notice： the attribute `class` of `img` should contain `placeholder`.**
 
 ## Placeholder options
 
-Placeholder options are set function input, e.g. `placeholder.getData({text: 'Image 404'})`. 
+Placeholder options are set function input,  e.g. `placeholder.getData({text: 'Image 404'})`, or set through URL properties e.g. `options="size=256x128&text=Hello!"`
 
 * `size`: The size of placeholder. Example: `256x128`, Default: `128x128`.
 * `bgcolor`: Background color. Example: `#969696`. Default: `random`.
 * `color`: Foreground (text) color. Example: `#ccc`. Default: `random`.
 * `text`: Custom text. Example: `Hello World, 你好`. Default: equal to `size`.
-* `font.style`: Custom text font. Can be `normal / italic / oblique`. Default: `oblique`.
-* `font.weight`: Custom text weight. Can be `normal / bold / bolder / lighter / Number`. Default: `bold`.
-* `font.size`: Custom text size. Default: `automation` calculate to avoid text overflow.
-* `font.family`: Custom text family. Default: `consolas`.
+* `fstyle`: Custom text font. Can be `normal / italic / oblique`. Default: `oblique`.
+* `fweight`: Custom text weight. Can be `normal / bold / bolder / lighter / Number`. Default: `bold`.
+* `fsize`: Custom text size. Default: `automation` calculate to avoid text overflow.
+* `ffamily`: Custom text family. Default: `consolas`.
 
-For Example:
+For Example, use as var to function input:
 
 	var opts = {
       	size: '512x256',
 		bgcolor: '#ccc', 
 		color: '#969696',
 		text: 'Hello World, 你好',
-      	font: {
-        	style:'oblique',
-			weight: 'bold',
-			default: 'bold'
-        	size:'40',
-			family: 'consolas'
-      	}
+    	fstyle:'oblique',
+		fweight: 'bold',
+    	fsize:'40',
+		ffamily: 'consolas'
     }
 	console.log(placeholder.getData(opts)) //get the base64 of the placeholder image.
 
+use as URL properties:
+	
+	size=256x128&text=Hello!&bgcolor=#ccc&color=#969696&fstyle=oblique&fweight=bold&fsize=40&ffamily=consolas
+	
 
 ## Placeholder methods
 
@@ -78,7 +88,7 @@ For Example:
 ## TODO
 
 1. More useful option paramters.
-2. Direct Rendering the DOM img element with class `placehoder` using URL config, similar with `imsky/holder`.
+2. As a client javascript library, try more and more smaller.
 
 
 ## Other

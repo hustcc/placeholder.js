@@ -15,7 +15,7 @@
 ## 特点
 
 1. 不依赖任何 js 框架，比如 jq
-2. 小于 1k ，具体是`0.98k`
+2. 小于 1k ，具体是`0.98k`，增加img配置方式之后，为`1.52kb`
 3. 配置项多，都有默认值
 4. 使用简单
 
@@ -26,23 +26,32 @@
 
 	<script src="placeholder.js"></script>
 
-然后调用placeholder.js的方法进行替换，举个例子如下:
+`1.` 调用placeholder.js的方法进行替换，举个例子如下:
 
 	<img src="image_origin.png" onerror="this.src=placeholder.getData({text: 'Image 404'})">
 
+`2.` 使用URL参数的方式配置Img的属性options，例如：
+
+	<img class="placeholder" />
+
+或者携带参数options:
+
+    <img options="size=256x128&text=Hello!" class="placeholder" />
+
+请注意img标签的class属性必须placeholder。
 
 ## Placeholder 配置项
 
-Placeholder 配置项用于API方法的输入参数, e.g. `placeholder.getData({text: 'Image 404'})`. 
+Placeholder 配置项用于API方法的输入参数, e.g. `placeholder.getData({text: 'Image 404'})`. 或者作为URL参数样式作为img的属性配置， e.g. `options="size=256x128&text=Hello!"`
 
 * `size`: placeholder图片尺寸. 例如: `256x128`, 默认: `128x128`.
 * `bgcolor`: 背景颜色. 例如: `#969696`. 默认: `random`.
 * `color`: 前景颜色，文字颜色. 例如: `#ccc`. 默认: `random`.
 * `text`: 自定义文本内容. 例如: `Hello World, 你好`. 默认: equal to `size`.
-* `font.style`: 字体样式. 可以是 `normal / italic / oblique`. 默认: `oblique`.
-* `font.weight`: 字体weight. 可以是 `normal / bold / bolder / lighter / Number`. 默认: `bold`.
-* `font.size`: 字体大小. 默认: `自动` 计算字体大小防止文字超出图片大小.
-* `font.family`: 字体. 默认: `consolas`.
+* `fstyle`: 字体样式. 可以是 `normal / italic / oblique`. 默认: `oblique`.
+* `fweight`: 字体weight. 可以是 `normal / bold / bolder / lighter / Number`. 默认: `bold`.
+* `fsize`: 字体大小. 默认: `自动` 计算字体大小防止文字超出图片大小.
+* `ffamily`: 字体. 默认: `consolas`.
 
 具体参数配置例子:
 
@@ -51,15 +60,16 @@ Placeholder 配置项用于API方法的输入参数, e.g. `placeholder.getData({
 		bgcolor: '#ccc', 
 		color: '#969696',
 		text: 'Hello World, 你好',
-      	font: {
-        	style:'oblique',
-			weight: 'bold',
-			default: 'bold'
-        	size:'40',
-			family: 'consolas'
-      	}
+    	fstyle:'oblique',
+		fweight: 'bold',
+    	fsize:'40',
+		ffamily: 'consolas'
     }
 	console.log(placeholder.getData(opts)) //get the base64 of the placeholder image.
+
+作为img的options属性为：
+
+	size=256x128&text=Hello!&bgcolor=#ccc&color=#969696&fstyle=oblique&fweight=bold&fsize=40&ffamily=consolas
 
 
 ## Placeholder 方法
@@ -78,7 +88,7 @@ Placeholder 配置项用于API方法的输入参数, e.g. `placeholder.getData({
 ## 待完成
 
 1. 更多的灵活配置。
-2. 直接渲染DOM上包含class包含`placehoder`的img元素，并且使用URL方式传递配置项，类似于`imsky/holder`。
+2. 作为浏览器端的js库，尽可能的压缩大小。
 
 
 ## 其他

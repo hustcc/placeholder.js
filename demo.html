@@ -1,23 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>image-placeholder.js</title>
-  </head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>image-placeholder.js DEMO</title>
+</head>
+
 <body>
-<script type="text/javascript" src="placeholder.js"></script>
-<img id="img_holder" src="">
-<script type="text/javascript">
-    var opts = {
-      size: '1024x1024',
-      font: {
-        style:'oblique',
-        
-      },
-      text: 'Hello World, 你好!'
-    }
-    document.getElementById('img_holder').setAttribute('src', window.placeholder.getData(opts));
-</script>
+    <script type="text/javascript" src="placeholder.js"></script>
+    <p>1. Programmatic use API to process image</p>
+    <img id="img_holder" src="">
+    <script type="text/javascript">
+        var opts = {
+            size: '256x128',
+            font: {
+                style: 'oblique',
+            },
+            text: 'Hello World'
+        }
+        document.getElementById('img_holder').setAttribute('src', window.placeholder.getData(opts));
+    </script>
+    <p>2. Image onerror event</p>
+    <img id="img_holder2" src="404.png" onerror="this.src=placeholder.getData({size: '256x128', text: 'Image 404'})">
+
+    <p>3. Use image config attribute.</p>
+    <img class="placeholder">
+    <img options="size=256x128&text=Hello!" class="placeholder">
+    <img options="size=256x128&text=Hello!&bgcolor=#ccc&color=#969696&fstyle=oblique&fweight=bold&fsize=40&ffamily=consolas" class="placeholder">
+    
 </body>
+
 </html>
