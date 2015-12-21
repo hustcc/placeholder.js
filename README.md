@@ -2,6 +2,7 @@
 
 A javascript library to generate `placeholder image` on client browser side. [中文Readme帮助文档](README-zh.md)
 
+[![Build Status](https://travis-ci.org/hustcc/placeholder.js.svg?branch=master)](https://travis-ci.org/hustcc/placeholder.js)
 
 ## Demo & Preview
 
