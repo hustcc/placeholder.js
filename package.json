@@ -1,0 +1,36 @@
+{
+  "name": "placeholderjs",
+  "officialName": "placeholder",
+  "version": "2.0.0",
+  "summary": "1kb library to generate image placeholders on client side",
+  "description": "Holder uses CANVAS to render image placeholders entirely in browser.",
+  "author": {
+    "name": "atool",
+    "url": "http://atool.org"
+  },
+  "homepage": "http://placeholder.cn",
+  "license": "MIT",
+  "keywords": [
+    "images",
+    "placeholders",
+    "client-side",
+    "canvas",
+    "generation",
+    "development"
+  ],
+  "main": "placeholder.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hustcc/placeholder.js"
+  },
+  "bugs": {
+    "url": "https://github.com/hustcc/placeholder.js/issues"
+  },
+  "devDependencies": {
+  },
+  "scripts": {
+    "test": "node test/index"
+  },
+  "dependencies": {
+  }
+}
