@@ -1,5 +1,5 @@
 {
-  "name": "placeholderjs",
+  "name": "placeholder_js",
   "officialName": "placeholder",
   "version": "2.0.0",
   "summary": "1kb library to generate image placeholders on client side",
@@ -8,7 +8,7 @@
     "name": "atool",
     "url": "http://atool.org"
   },
-  "homepage": "http://placeholder.cn",
+  "homepage": "http://placeholder.cn/",
   "license": "MIT",
   "keywords": [
     "images",
@@ -16,7 +16,8 @@
     "client-side",
     "canvas",
     "generation",
-    "development"
+    "development",
+    "tools"
   ],
   "main": "placeholder.js",
   "repository": {
