@@ -39,7 +39,15 @@ or with options setting:
 
     <img options="size=256x128&text=Hello!" class="placeholder" />
 
-**Notice： the attribute `class` of `img` should contain `placeholder`.**
+**Notice：** 
+
+ - the attribute `class` of `img` should contain `placeholder`.
+ - the url paramter `text` should be after `encodeURIComponent`, contains % should be `%25`, & should be `%26`, = should be `%3D`, e.g. 
+ 
+
+	<img options="size=256x128&text=Hello%2525%26%3DWorld" class="placeholder">
+
+the config above will genertate image placeholder with text `Hello%25&=`.
 
 ## Placeholder options
 

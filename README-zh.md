@@ -39,7 +39,15 @@
 
     <img options="size=256x128&text=Hello!" class="placeholder" />
 
-请注意img标签的class属性必须placeholder。
+**注意事项：**
+
+ - `img`标签的`class`属性要包含`placeholder`才会生效.
+ - URL参数中的text值应该被encodeURIComponent转码，主要包括： % 为 `%25`, & 为 `%26`, = 为 `%3D`, e.g. 
+ 
+
+	<img options="size=256x128&text=Hello%2525%26%3DWorld" class="placeholder">
+
+上面的配置会生成一个占位图，其中的文字内容为： `Hello%25&=`.
 
 ## Placeholder 配置项
 

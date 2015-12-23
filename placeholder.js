@@ -1,6 +1,6 @@
 /*!
 	placeholder.js - client side image placeholders
-	© 2015 Hustcc - http://www.aTool.org
+	© 2015 Hustcc - http://placeholder.cn/
 	Site:     http://github.atool.org/placeholder.js.html
 	Issues:   https://github.com/hustcc/placeholder.js/issues
 	License:  MIT
@@ -105,7 +105,7 @@
 		var opts = {}, parameters = url.split('&'), k_v;
 		for (var i in parameters) {
 			k_v = parameters[i].split('=');
-			opts[k_v[0]] = k_v[1];
+			opts[k_v[0]] = decodeURIComponent(k_v[1]);
 		}
 		return opts;
 	}
