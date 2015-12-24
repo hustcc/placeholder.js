@@ -25,29 +25,39 @@
 
 引入 placeholder.js 到你的前段代码中:
 
-	<script src="placeholder.js"></script>
+```html
+<script src="placeholder.js"></script>
+```
 
 `1.` 调用placeholder.js的方法进行替换，举个例子如下:
 
-	<img src="image_origin.png" onerror="this.src=placeholder.getData({text: 'Image 404'})">
+```html
+<img src="image_origin.png" onerror="this.src=placeholder.getData({text: 'Image 404'})">
+```
 
 `2.` 使用URL参数的方式配置Img的属性options，例如：
 
-	<img class="placeholder" />
+```html
+<img class="placeholder" />
+```
 
 或者携带参数options:
 
-    <img options="size=256x128&text=Hello!" class="placeholder" />
+```html
+<img options="size=256x128&text=Hello!" class="placeholder" />
+```
 
 **注意事项：**
 
  - `img`标签的`class`属性要包含`placeholder`才会生效.
  - URL参数中的text值应该被encodeURIComponent转码，主要包括： % 为 `%25`, & 为 `%26`, = 为 `%3D`, e.g. 
  
-
-	<img options="size=256x128&text=Hello%2525%26%3DWorld" class="placeholder">
+```html
+<img options="size=256x128&text=Hello%2525%26%3DWorld" class="placeholder">
+```
 
 上面的配置会生成一个占位图，其中的文字内容为： `Hello%25&=`.
+
 
 ## Placeholder 配置项
 
@@ -64,21 +74,25 @@ Placeholder 配置项用于API方法的输入参数, e.g. `placeholder.getData({
 
 具体参数配置例子:
 
-	var opts = {
-      	size: '512x256',
-		bgcolor: '#ccc', 
-		color: '#969696',
-		text: 'Hello World, 你好',
-    	fstyle:'oblique',
-		fweight: 'bold',
-    	fsize:'40',
-		ffamily: 'consolas'
-    }
-	console.log(placeholder.getData(opts)) //get the base64 of the placeholder image.
+```javascript
+var opts = {
+  	size: '512x256',
+	bgcolor: '#ccc', 
+	color: '#969696',
+	text: 'Hello World, 你好',
+	fstyle:'oblique',
+	fweight: 'bold',
+	fsize:'40',
+	ffamily: 'consolas'
+}
+console.log(placeholder.getData(opts)) //get the base64 of the placeholder image.
+```
 
 作为img的options属性为：
 
-	size=256x128&text=Hello!&bgcolor=#ccc&color=#969696&fstyle=oblique&fweight=bold&fsize=40&ffamily=consolas
+```html
+size=256x128&text=Hello!&bgcolor=#ccc&color=#969696&fstyle=oblique&fweight=bold&fsize=40&ffamily=consolas
+```
 
 
 ## Placeholder 方法

@@ -25,29 +25,39 @@ A javascript library to generate `placeholder image` on client browser side. [�
 
 Include placeholder.js in your HTML:
 
-	<script src="placeholder.js"></script>
+```html
+<script src="placeholder.js"></script>
+```
 
 `1.` Programmatic use API to process image with a specific src attribute, like this one:
 
-	<img src="image_origin.png" onerror="this.src=placeholder.getData({text: 'Image 404'})">
+```html
+<img src="image_origin.png" onerror="this.src=placeholder.getData({text: 'Image 404'})">
+```
 
 `2.` Holder will then process all images with a specific src attribute, like this one:
-	
-	<img class="placeholder" />
+
+```html	
+<img class="placeholder" />
+```
 
 or with options setting:
 
-    <img options="size=256x128&text=Hello!" class="placeholder" />
+```html
+<img options="size=256x128&text=Hello!" class="placeholder" />
+```
 
 **Notice：** 
 
  - the attribute `class` of `img` should contain `placeholder`.
- - the url paramter `text` should be after `encodeURIComponent`, contains % should be `%25`, & should be `%26`, = should be `%3D`, e.g. 
- 
+ - the url paramter `text` should be after `encodeURIComponent`, contains % should be `%25`, & should be `%26`, = should be `%3D`, e.g.  
 
-	<img options="size=256x128&text=Hello%2525%26%3DWorld" class="placeholder">
+```html
+<img options="size=256x128&text=Hello%2525%26%3DWorld" class="placeholder">
+```
 
 the config above will genertate image placeholder with text `Hello%25&=`.
+
 
 ## Placeholder options
 
@@ -64,22 +74,26 @@ Placeholder options are set function input,  e.g. `placeholder.getData({text: 'I
 
 For Example, use as var to function input:
 
-	var opts = {
-      	size: '512x256',
-		bgcolor: '#ccc', 
-		color: '#969696',
-		text: 'Hello World, 你好',
-    	fstyle:'oblique',
-		fweight: 'bold',
-    	fsize:'40',
-		ffamily: 'consolas'
-    }
-	console.log(placeholder.getData(opts)) //get the base64 of the placeholder image.
+```javascript
+var opts = {
+  	size: '512x256',
+	bgcolor: '#ccc', 
+	color: '#969696',
+	text: 'Hello World, 你好',
+	fstyle:'oblique',
+	fweight: 'bold',
+	fsize:'40',
+	ffamily: 'consolas'
+}
+console.log(placeholder.getData(opts)) //get the base64 of the placeholder image.
+```
 
 use as URL properties:
 	
-	size=256x128&text=Hello!&bgcolor=#ccc&color=#969696&fstyle=oblique&fweight=bold&fsize=40&ffamily=consolas
-	
+```html
+size=256x128&text=Hello!&bgcolor=#ccc&color=#969696&fstyle=oblique&fweight=bold&fsize=40&ffamily=consolas
+```
+
 
 ## Placeholder methods
 
