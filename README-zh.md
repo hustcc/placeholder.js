@@ -50,7 +50,7 @@
 **注意事项：**
 
  - `img`标签的`class`属性要包含`placeholder`才会生效.
- - URL参数中的text值应该被encodeURIComponent转码，主要包括： % 为 `%25`, & 为 `%26`, = 为 `%3D`, e.g. 
+ - URL参数中的text值应该被`encodeURIComponent`转码，主要包括： % 为 `%25`, & 为 `%26`, = 为 `%3D`, 空格 为 `%20` e.g. 
  
 ```html
 <img options="size=256x128&text=Hello%2525%26%3DWorld" class="placeholder">

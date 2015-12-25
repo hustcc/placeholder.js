@@ -105,7 +105,11 @@
 		var opts = {}, parameters = url.split('&'), k_v;
 		for (var i in parameters) {
 			k_v = parameters[i].split('=');
-			opts[k_v[0]] = decodeURIComponent(k_v[1]);
+			try { 
+				opts[k_v[0]] = decodeURIComponent(k_v[1]);
+			} catch (e) { 
+				opts[k_v[0]] = k_v[1];
+			}
 		}
 		return opts;
 	}

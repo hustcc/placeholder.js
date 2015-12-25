@@ -50,7 +50,7 @@ or with options setting:
 **Notice：** 
 
  - the attribute `class` of `img` should contain `placeholder`.
- - the url paramter `text` should be after `encodeURIComponent`, contains % should be `%25`, & should be `%26`, = should be `%3D`, e.g.  
+ - the url paramter `text` should be after `encodeURIComponent`, contains % should be `%25`, & should be `%26`, = should be `%3D`, space should be `%20`, e.g.  
 
 ```html
 <img options="size=256x128&text=Hello%2525%26%3DWorld" class="placeholder">
