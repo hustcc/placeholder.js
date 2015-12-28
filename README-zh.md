@@ -2,7 +2,7 @@
 
 一个Javascript库，用于在浏览器端生成`placeholder image`，提供完善的配置和简单的方法。[EN-Readme](README.md)
 
-[![Build Status](https://travis-ci.org/hustcc/placeholder.js.svg?branch=master)](https://travis-ci.org/hustcc/placeholder.js)
+[![Build Status](https://travis-ci.org/hustcc/placeholder.js.svg?branch=master)](https://travis-ci.org/hustcc/placeholder.js) [![npm](https://img.shields.io/npm/v/placeholder.js.svg?style=flat-square)](https://www.npmjs.com/package/placeholder.js) [![npm](https://img.shields.io/npm/dt/placeholder.js.svg?style=flat-square)](https://www.npmjs.com/package/placeholder.js) [![npm](https://img.shields.io/npm/l/placeholder.js.svg?style=flat-square)](https://www.npmjs.com/package/placeholder.js)
 
 ## 预览
 

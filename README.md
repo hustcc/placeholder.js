@@ -2,7 +2,7 @@
 
 A javascript library to generate `placeholder image` on client browser side. [中文Readme帮助文档](README-zh.md)
 
-[![Build Status](https://travis-ci.org/hustcc/placeholder.js.svg?branch=master)](https://travis-ci.org/hustcc/placeholder.js)
+[![Build Status](https://travis-ci.org/hustcc/placeholder.js.svg?branch=master)](https://travis-ci.org/hustcc/placeholder.js) [![npm](https://img.shields.io/npm/v/placeholder.js.svg?style=flat-square)](https://www.npmjs.com/package/placeholder.js) [![npm](https://img.shields.io/npm/dt/placeholder.js.svg?style=flat-square)](https://www.npmjs.com/package/placeholder.js) [![npm](https://img.shields.io/npm/l/placeholder.js.svg?style=flat-square)](https://www.npmjs.com/package/placeholder.js)
 
 ## Demo & Preview
 
