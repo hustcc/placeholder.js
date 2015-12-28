@@ -6,7 +6,7 @@
 
 ## 预览
 
-[官方网站示例](http://github.atool.org/placeholder.js.html)
+[官方网站文档和示例](http://placeholder.cn)
 
 ![screenshots/website.png](https://raw.githubusercontent.com/hustcc/placeholder.js/master/screenshots/website.png)
 

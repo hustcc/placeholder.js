@@ -6,7 +6,7 @@ A javascript library to generate `placeholder image` on client browser side. [ä¸
 
 ## Demo & Preview
 
-[Website Demo](http://github.atool.org/placeholder.js.html)
+[Website Doc & Demo](http://placeholder.cn)
 
 ![screenshots/website.png](https://raw.githubusercontent.com/hustcc/placeholder.js/master/screenshots/website.png)
 
