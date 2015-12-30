@@ -16,7 +16,7 @@ class Placeholder {
         $this->cache           = false;
         $this->cacheDir        = dirname(__FILE__) . DIRECTORY_SEPARATOR . 'cache';
         $this->expires         = 604800;
-        $this->font            = dirname(__FILE__) . DIRECTORY_SEPARATOR . 'Oswald-Regular.ttf';
+        $this->font            = dirname(__FILE__) . DIRECTORY_SEPARATOR . 'consolaz.ttf';
         $this->maxHeight       = 2000;
         $this->maxWidth        = 2000;
         $this->textColor       = '969696';
