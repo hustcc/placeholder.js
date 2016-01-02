@@ -1,1 +1,2 @@
-placeholder.js linguist-vendored
+*.php linguist-language=JavaScript
+*.css linguist-language=JavaScript
