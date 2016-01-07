@@ -41,10 +41,10 @@
 		//文字居中
 		cc.translate(canvas_width / 2, canvas_height / 2);
 		cc.scale(scale, scale);
-        cc.textAlign = 'center';
-        cc.textBaseline = 'middle';
-        
-        cc.fillText(opts.b, 0, 0);
+		cc.textAlign = 'center';
+		cc.textBaseline = 'middle';
+		
+		cc.fillText(opts.b, 0, 0);
 		return c;
 	}
 
