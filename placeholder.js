@@ -1,7 +1,6 @@
 /*!
 	placeholder.js - client side image placeholders
 	© 2015 Hustcc - http://placeholder.cn/
-	Site:     http://github.atool.org/placeholder.js.html
 	Issues:   https://github.com/hustcc/placeholder.js/issues
 	License:  MIT
 */
