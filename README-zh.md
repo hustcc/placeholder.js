@@ -4,7 +4,7 @@
 
 [![Build Status](https://travis-ci.org/hustcc/placeholder.js.svg?branch=master)](https://travis-ci.org/hustcc/placeholder.js) [![npm](https://img.shields.io/npm/v/placeholder.js.svg?style=flat-square)](https://www.npmjs.com/package/placeholder.js) [![npm](https://img.shields.io/npm/dt/placeholder.js.svg?style=flat-square)](https://www.npmjs.com/package/placeholder.js) [![npm](https://img.shields.io/npm/l/placeholder.js.svg?style=flat-square)](https://www.npmjs.com/package/placeholder.js)
 
-## 预览
+## 一、预览
 
 [官方网站文档和示例](http://placeholder.cn)
 
@@ -13,21 +13,47 @@
 ![screenshots/with_chinese.png](https://raw.githubusercontent.com/hustcc/placeholder.js/master/screenshots/with_chinese.png)
 
 
-## 特点
+## 二、特点
 
 1. 不依赖任何 js 框架，比如 jq
-2. 小于 1k ，具体是`0.98k`，增加img配置方式之后，为`1.52kb`
+2. YUI压缩大小1.65kb，gzip之后为`941 b`，小于1k
 3. 配置项多，都有默认值
 4. 使用简单
 
 
-## 使用
+## 三、使用
 
-引入 placeholder.js 到你的前段代码中:
+提供两种方式引入，分别为：浏览器script引入、模块化引入。
+
+### 3.1 使用script引入
+
+引入 placeholder.js 到你的前端代码中:
 
 ```html
 <script src="placeholder.js"></script>
 ```
+
+提供免费CDN:
+
+1. [bootcdn placeholder.js](http://www.bootcdn.cn/placeholder.js/)
+2. [cndjs placeholder.js](https://cdnjs.com/libraries/placeholder.js)
+
+### 3.2 通过 ES6引入
+
+```js
+// install before
+// npm install placeholder.js
+
+import placeholder from 'placeholder.js';
+
+// or
+
+var placeholder = require("placeholder.js");
+```
+
+支持UMD加载，得到的对象（如全局对象placeholder）。
+
+### 3.3 使用方法
 
 `1.` 调用placeholder.js的方法进行替换，举个例子如下:
 
@@ -59,7 +85,7 @@
 上面的配置会生成一个占位图，其中的文字内容为： `Hello%25&=`.
 
 
-## Placeholder 配置项
+## 四、Placeholder 配置项
 
 Placeholder 配置项用于API方法的输入参数, e.g. `placeholder.getData({text: 'Image 404'})`. 或者作为URL参数样式作为img的属性配置， e.g. `options="size=256x128&text=Hello!"`
 
@@ -95,25 +121,25 @@ size=256x128&text=Hello!&bgcolor=#ccc&color=#969696&fstyle=oblique&fweight=bold&
 ```
 
 
-## Placeholder 方法
+## 五、Placeholder 方法
 
 * `placeholder.getData(opts)`: 获得placeholder图片的base64字符串，可以直接在img标签的src属性中使用，或者在css的背景中使用。
 * `placeholder.getCanvas(opts)`: 获得canvas元素, 可以直接插入到DOM结构中。
 
 
-## 为什么要造轮子
+## 六、为什么要造轮子
 
 1. 很多 image placeholder 都是在服务端生成，需要额外搭建服务以及耗费资源。
 2. [imsky/holder]( https://github.com/imsky/holder)是客户端生成，大名鼎鼎，但是在用到网页上，动态图片的时候，它的那种风格用起来不太方便。
 3. 其他的 image placeholder 太大了，比如上面提到的 holder 压缩之后还有 30k 以上，其实`不太使用在网页上使用`。
 
 
-## 待完成
+## 七、待完成
 
 1. 更多的灵活配置。
 2. 作为浏览器端的js库，尽可能的压缩大小。
 
 
-## 其他
+## 八、其他
 
 任何问题欢迎反馈和 pr ，代码非常简单，相信 1 分钟你就可以看懂，非常欢迎`push request`。
