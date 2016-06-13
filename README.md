@@ -16,8 +16,8 @@ A javascript library to generate `placeholder image` on client browser side. [ä¸
 ## 2. Feature
 
  - Pure javascript, do not depends on jQuery or other javascript framework.
- - Very lite, only 1.65kb. and `941 b` after gzip. 
- - So many option config, all has default value.
+ - Very lite, only 1.46kb. and `851 b` after gzip. 
+ - Many options config, all has default value.
  - Very easy to use.
 
 
@@ -30,7 +30,7 @@ Two method to import into you page.
 Include placeholder.js in your HTML:
 
 ```html
-<script src="placeholder.js"></script>
+<script src="dist/placeholder.min.js"></script>
 ```
 
 CDN is supported at:
@@ -53,7 +53,7 @@ var placeholder = require("placeholder.js");
 
 UMD import is supported, then get global object: `placeholder`.
 
-### 3.3 What's the method
+### 3.3 How to use
 
 `1.` Programmatic use API to process image with a specific src attribute, like this one:
 
@@ -125,6 +125,7 @@ size=256x128&text=Hello!&bgcolor=#ccc&color=#969696&fstyle=oblique&fweight=bold&
 
 * `placeholder.getData(opts)`: Get the base64 string of placeholder image, can be used in the `src` of img, or in the background-url of css style.
 * `placeholder.getCanvas(opts)`: Get the canvas element, can be append to DOM.
+* `placeholder.render(force)`: Render the `img` tags which with **class='placeholder'**. and with the tag attribute `options`. `force` is true, will render all the node again, else, will only render img which has not been rendered. default is `false`.
 
 
 ## 6. Why another Holder?
@@ -133,13 +134,8 @@ size=256x128&text=Hello!&bgcolor=#ccc&color=#969696&fstyle=oblique&fweight=bold&
  - [imsky/holder](https://github.com/imsky/holder) can generate on client browser side, `BUT`, the sytle is `holder.js/300x200`, so hard to use on website when need dynamic image.
  - Other image placeholder javascript file size is too large, such as `imsky/holder is 30.8 KB`, not suitable for website.
 
+## 7. LICENSE
 
-## 7. TODO
+MIT
 
-1. More useful option paramters.
-2. As a client javascript library, try more and more smaller.
-
-
-## 8. Other
-
-welcome pr and issue, the code is simple.
+[for react version, see react-placeholder.](http://github.com/hustcc/react-placeholder)

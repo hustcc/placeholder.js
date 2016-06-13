@@ -16,7 +16,7 @@
 ## 二、特点
 
 1. 不依赖任何 js 框架，比如 jq
-2. YUI压缩大小1.65kb，gzip之后为`941 b`，小于1k
+2. YUI压缩大小1.46kb，gzip之后为`851 b`，小于1k
 3. 配置项多，都有默认值
 4. 使用简单
 
@@ -30,7 +30,7 @@
 引入 placeholder.js 到你的前端代码中:
 
 ```html
-<script src="placeholder.js"></script>
+<script src="dist/placeholder.min.js"></script>
 ```
 
 提供免费CDN:
@@ -38,7 +38,7 @@
 1. [bootcdn placeholder.js](http://www.bootcdn.cn/placeholder.js/)
 2. [cndjs placeholder.js](https://cdnjs.com/libraries/placeholder.js)
 
-### 3.2 通过 ES6引入
+### 3.2 通过 ES6 引入
 
 ```js
 // install before
@@ -125,6 +125,7 @@ size=256x128&text=Hello!&bgcolor=#ccc&color=#969696&fstyle=oblique&fweight=bold&
 
 * `placeholder.getData(opts)`: 获得placeholder图片的base64字符串，可以直接在img标签的src属性中使用，或者在css的背景中使用。
 * `placeholder.getCanvas(opts)`: 获得canvas元素, 可以直接插入到DOM结构中。
+* `placeholder.render()`: 渲染**class='placeholder'**的img标签，并且使用对应的options作为渲染参数。
 
 
 ## 六、为什么要造轮子
@@ -133,13 +134,8 @@ size=256x128&text=Hello!&bgcolor=#ccc&color=#969696&fstyle=oblique&fweight=bold&
 2. [imsky/holder]( https://github.com/imsky/holder)是客户端生成，大名鼎鼎，但是在用到网页上，动态图片的时候，它的那种风格用起来不太方便。
 3. 其他的 image placeholder 太大了，比如上面提到的 holder 压缩之后还有 30k 以上，其实`不太使用在网页上使用`。
 
+## 八、LICENSE
 
-## 七、待完成
+MIT
 
-1. 更多的灵活配置。
-2. 作为浏览器端的js库，尽可能的压缩大小。
-
-
-## 八、其他
-
-任何问题欢迎反馈和 pr ，代码非常简单，相信 1 分钟你就可以看懂，非常欢迎`push request`。
+[关于项目的 react 版本, 可以看 react-placeholder.](http://github.com/hustcc/react-placeholder)

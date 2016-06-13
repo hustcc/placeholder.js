@@ -1,12 +1,12 @@
 {
   "name": "placeholder.js",
   "officialName": "placeholder",
-  "version": "3.0.0",
+  "version": "3.1.0",
   "summary": "1kb library to generate image placeholders on client side",
   "description": "Holder uses CANVAS to render image placeholders entirely in browser.",
   "author": {
     "name": "atool",
-    "url": "http://www.atool.org/"
+    "url": "http://www.aTool.org/"
   },
   "homepage": "http://placeholder.cn/",
   "license": "MIT",
@@ -19,7 +19,7 @@
     "development",
     "tools"
   ],
-  "main": "placeholder.js",
+  "main": "dist/placeholder.min.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/hustcc/placeholder.js"
@@ -28,9 +28,15 @@
     "url": "https://github.com/hustcc/placeholder.js/issues"
   },
   "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-wrap": "^0.11.0",
+    "gulp-uglify": "^1.5.3",
+    "jshint": "^2.9.2",
+    "gulp-rename": "^1.2.2"
   },
   "scripts": {
-    "test": "node test/index"
+    "test": "jshint dist/placeholder.js",
+    "build": "gulp mini && npm run test"
   },
   "dependencies": {
   }
